@@ -8,10 +8,10 @@ print(360)
 print(32*45)
 
 # Sintaxis para imprimir el valor de una variable
-value = 8*6
+value = 8 * 6  # pylint: disable=invalid-name
 print(value)
 
-"""Usar operadores aritméticos, con especial atención a los exponentes"""
+# Usar operadores aritméticos, con especial atención a los exponentes
 
 # Multiplicación, división, suma y resta
 print(3*8/2+5-1)
@@ -26,16 +26,14 @@ print(4**0.5)  # Para encontrar la raíz cuadrada de un número
 # formado usando un conjunto de caracteres "x" con cada carácter en "x"
 # teniendo un número "y" de valores posibles, necesitará usar un
 # exponente para el cálculo:
-x = 4
-y = 26
+x, y = 4, 26
 print(y**x)
 
-"""Usar variables con asignación y operadores aritméticos"""
+# Usar variables con asignación y operadores aritméticos
 
 # Asignación de valores a las variables:
-years = 10
-weeks_in_a_year = 52
+years, weeks_in_a_year = 10, 52
 # A esta variable se le asigna un cálculo aritmético:
-weeks_in_a_decade = years * weeks_in_a_year
+weeks_in_decade = years * weeks_in_a_year  # pylint: disable=invalid-name
 # Imprime el cálculo almacenado en la variable "weeks_in_a_decade":
-print(weeks_in_a_decade)
+print(weeks_in_decade)
