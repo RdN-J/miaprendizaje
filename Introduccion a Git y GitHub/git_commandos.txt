@@ -1,0 +1,19 @@
+# Instalar mediante winget
+winget inatall git.git -h 
+
+# Introducir nombre de usuario y correo
+git congif --global user.mail "correo electronico"
+git congif --global user.name "Mi nombre"
+
+#Iniciar repositorio
+git init
+
+# Añadir archivos al repositorio
+git add (nombre del archivo)
+
+# Comprobar estado de los archivos
+git status
+
+# Añadimos un commit
+git commit -m "nombre del commit"
+
