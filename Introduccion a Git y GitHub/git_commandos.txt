@@ -8,7 +8,7 @@ git congif --global user.name "Mi nombre"
 #Iniciar repositorio
 git init
 
-# Añadir archivos al repositorio
+# Añadir archivos a rastrear
 git add (nombre del archivo)
 
 # Comprobar estado de los archivos
@@ -17,3 +17,5 @@ git status
 # Añadimos un commit
 git commit -m "nombre del commit"
 
+# sincronizar repositorio en Github
+git push
