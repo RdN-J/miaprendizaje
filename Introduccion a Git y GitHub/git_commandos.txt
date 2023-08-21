@@ -1,9 +1,12 @@
 # Instalar mediante winget
-winget inatall git.git -h 
+winget install git.git -h 
 
 # Introducir nombre de usuario y correo
-git congif --global user.mail "correo electronico"
-git congif --global user.name "Mi nombre"
+git config --global user.mail "correo electrónico"
+git config --global user.name "Mi nombre"
+
+# Comprobar la configuración
+git config -l
 
 #Iniciar repositorio
 git init
@@ -16,6 +19,27 @@ git status
 
 # Añadimos un commit
 git commit -m "nombre del commit"
+git commit -a -m "nombre del commit" # al usar el parámetro -a no hace falta hacer antes un git add del archivo
 
-# sincronizar repositorio en Github
+# sincronizar repositorio en GitHub
 git push
+
+# Clonar repositorio de git
+git clone (url del repositorio)
+
+# Comprobar cambios de un commit a otro
+git log # Muestra todos los commit
+git log --stat # Muestra todos loa commit y las archivos que cambiaron
+git log -p # Muestra todos los commit y sus cambios
+git show 
+
+# Comprobar los cambios pendientes
+git diff # Cambios posteriores de hacer git add
+git diff --staged # Ver cambios ente el ultimo git add y el anterior commit.
+git add -p 
+
+# Eliminar archivos
+git rm
+
+# Mover o renombrar archivos
+git mv
