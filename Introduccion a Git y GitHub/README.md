@@ -5,5 +5,5 @@
 
 Aquí voy a seguir el curso de mouredev hello-git.
 
-[=20%]
+![](https://i.ibb.co/9wVMxQp/header.jpg)
 
