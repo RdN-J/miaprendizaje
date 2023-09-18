@@ -17,9 +17,17 @@ git add (nombre del archivo)
 # Comprobar estado de los archivos
 git status
 
+# Revertir cambios
+git checkout # Revierte antes de hacer git add
+git reset
+git revert HEAD # revierte el ultimo commit
+git revert "id commit" # Revierte a un commit en especifico
+
+
 # Añadimos un commit
 git commit -m "nombre del commit"
 git commit -a -m "nombre del commit" # al usar el parámetro -a no hace falta hacer antes un git add del archivo
+git commit --amend # Sobrescribe el ultimo commit   
 
 # sincronizar repositorio en GitHub
 git push
@@ -43,3 +51,12 @@ git rm
 
 # Mover o renombrar archivos
 git mv
+
+# Ramas
+git branch # Muestra todas las ramas 
+git checkout "nombre de la rama" # Cambia de rama
+git checkout -b "nombre de la rama" # Crea nueva rama y cambia ha ella
+git branch -d "nombre de la rama" # Borra la rama
+
+git merge "nombre de la rama" # Fusiona con la rama master
+git merge --abort # Aborta la fusion de la rama
